@@ -29,4 +29,16 @@ public class ArrayExample {
         }
         return array.length;
     }
+    
+    public void incrementAllElements() {
+        for (int i = 0; i < array.length; i++) {
+            array[i]++;
+        }
+    }
+    
+    public void decrementAllElements() {
+        for (int i = 0; i < array.length; i++) {
+            array[i]--;
+        }
+    }
 }
