@@ -5,8 +5,22 @@ import org.junit.Test;
 
 public class LeapYearTest {
     @Test
-    public void testA() {
-        LeapYear ly = new LeapYear();
-        Assert.assertEquals(true, ly.isLeapYear(2000));
+    public void test1() {
+        Assert.assertTrue(new LeapYear().isLeapYear(4));
+    }
+    
+    @Test
+    public void test2() {
+        Assert.assertTrue(new LeapYear().isLeapYear(400));
+    }
+    
+    @Test
+    public void test3() {
+        Assert.assertFalse(new LeapYear().isLeapYear(100));
+    }
+    
+    @Test
+    public void test4() {
+        Assert.assertFalse(new LeapYear().isLeapYear(1));
     }
 }
