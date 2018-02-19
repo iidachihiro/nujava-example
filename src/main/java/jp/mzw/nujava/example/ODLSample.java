@@ -11,4 +11,11 @@ public class ODLSample {
         if (x > 0 || (x < -2) && y) return true;
         return false;
     }
+    
+    public boolean sample3(int a, int b) {
+        if (!((a+(2*b))>0)) {
+            return true;
+        }
+        return false;
+    }
 }
